@@ -1,0 +1,88 @@
+* {
+	padding: 2px;
+	margin:  2px;
+	font-family: Century Gothic;
+}
+
+body {
+	background-color: hwb(184 52% 35%);
+}
+
+div {
+	padding: 30px;
+	background-color: hsl(209, 31%, 44%);
+	margin: 10px;
+}
+
+input {
+	padding: 9px;
+	font-size: 18px;
+	border: solid 1px #747bbd;
+	width: 80%;
+}
+
+input[type="button"] {
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+a {
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.R1-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.R1 {
+	width: 200px; /* Ajusta el tamaño según sea necesario */
+}
+input[type="button"] {
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	align-items: center;
+	background-color: #747bbd;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="button"]:hover {
+	background-color: hsl(184, 87%, 27%);
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+	width: 100%;
+	max-width: 300px;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
