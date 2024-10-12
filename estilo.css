@@ -5,12 +5,12 @@
 }
 
 body {
-	background-color: hwb(184 52% 35%);
+	background-color: hwb(49 23% 19% / 0.753);
 }
 
 div {
 	padding: 30px;
-	background-color: hsl(209, 31%, 44%);
+	background-color: hsl(209, 64%, 52%);
 	margin: 10px;
 }
 
