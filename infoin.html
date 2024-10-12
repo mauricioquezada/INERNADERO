@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="generator" content="Hugo 0.84.0">
-	<title>INVERNADERO</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVERNADERO</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        .button {
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button-blue {
+            background-color: palevioletred;
+        }
+        .button:hover {
+            background-color: darkpurple;
+        }
+    </style>
 </head>
 <body>
-	<h1 align="center">CONTROL DE VARIABLES DEL INVERNADERO</h1>
-	<div>
-		<h3>Temperatura:</h3>
-		<input type="text" id="temp">
-		<h3>Humedad:</h3>
-		<input type="text" id="hume">
-		<h3>PH</h3>
-		<input type="text" id="ph">
-		<h3>Reporte escrito:</h3>
-		<input type="text" id="texto">
-		<div class="buttons">
-			<input type="button" id="datos" value="Leer datos">
-			<input type="button" id="hablar" value="Reporte">
-		</div>
-		<a href="index.html">Volver al inicio</a>
-		<div class="R1-container">
-			<img src="img/R1.JPG" alt="R1" class="R1">
-		</div>
-	</div>
-	<script src="script.js"></script>
+    <h1 align="center">CONTROL DE VARIABLES DEL INVERNADERO</h1>
+    <div>
+        <h3>Temperatura:</h3>
+        <input type="text" id="temp">
+        <h3>Humedad:</h3>
+        <input type="text" id="hume">
+        <h3>PH</h3>
+        <input type="text" id="ph">
+        <h3>Reporte escrito:</h3>
+        <input type="text" id="texto">
+        <div class="buttons">
+            <input type="button" id="datos" value="Leer datos" class="button">
+            <input type="button" id="hablar" value="Reporte" class="button">
+            <a href="respaldoi.html" class="button button-blue">Texto Azul</a>
+        </div>
+        <a href="index.html" class="button">Volver al inicio</a>
+        <div class="R1-container">
+            <img src="img/R1.JPG" alt="R1" class="R1" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

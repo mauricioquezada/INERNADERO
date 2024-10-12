@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Invernadero</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center">Información del Invernadero</h1>
+    <div class="container">
+        <p>El invernadero está diseñado para optimizar el cultivo de rosas de exportación. Se controla la temperatura, humedad y pH de la tierra mediante una red de sensores.</p>
+        <p>El objetivo es que los ingenieros no tengan que interpretar datos a su juicio, sino que una máquina sea capaz de expresar en lenguaje natural el estado del invernadero.</p>
+        <div class="text-center mt-3">
+            <a href="index.html" class="btn btn-warning">Volver al inicio</a>
+        </div>
+        <div class="text-center mt-3">
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Temperatura', 'Humedad', 'pH'],
+                datasets: [{
+                    label: 'Valores del Invernadero',
+                    data: [22, 65, 6.5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
