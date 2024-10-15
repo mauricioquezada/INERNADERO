@@ -17,9 +17,11 @@
         }
         .button-blue {
             background-color: blue;
+            transition: transform 0.3s ease-in-out;
         }
         .button:hover {
             background-color: darkcyan;
+            transform: scale(1.05);
         }
         .card {
             margin: 20px 0;
@@ -30,11 +32,15 @@
     </style>
 </head>
 <body>
-    <h1 class="text-center">Bienvenido al Sistema del Invernadero</h1>
-    <p class="text-center">Haz clic en el siguiente enlace para ver el control de variables del invernadero.</p>
-    <div class="text-center">
-        <a href="infoin.html" class="button button-blue">Control de Variables</a>
-    </div>
+    <div class="container">
+        <div class="card text-center mt-5 p-4 shadow-lg" style="background-color: #f8f9fa; border-radius: 10px;">
+            <div class="card-body">
+                <h1 class="card-title">Bienvenido al Sistema del Invernadero</h1>
+                <p class="card-text">Haz clic en el siguiente enlace para ver el control de variables del invernadero.</p>
+                <a href="infoin.html" class="btn btn-primary">Control de Variables</a>
+            </div>
+        </div>
+    </div> 
     <div class="container">
         <div class="card">
             <div class="card-body">
@@ -45,6 +51,7 @@
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title">Objetivo de la Compañía</h2>
+                <li>red de sensores para la lectura constante</li>
                 <p class="card-text">Lo que busca la compañía es que los ingenieros no tengan que interpretar datos a su juicio, sino que una máquina sea capaz de expresar en lenguaje natural el estado del invernadero.</p>
                 <div class="text-center">
                     <img src="img/R1.JPG" alt="R1" class="img-fluid" style="max-width: 100%; height: auto;">
@@ -82,7 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card bg-ligh">
         <div class="card-body">
             <h2 class="card-title">Referencias</h2>
             <ul>
