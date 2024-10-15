@@ -6,43 +6,124 @@
     <title>INVERNADERO</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <style>
+        * {
+            padding: 0%;
+            margin: 2px;
+            font-family: Century Gothic;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: hwb(48 22% 45% / 0.753);
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 0px;
+            border-radius: 02px;
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 0px;
+        }
+
+        .form-group h3 {
+            margin: 0px 0;
+        }
+
+        .form-group input {
+            width: 100%;
+            max-width: 300px;
+            padding: 0px;
+            box-sizing: border-box;
+            border: 2px solid #747bbd;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2px;
+        }
+
         .button {
             background-color: purple;
             color: white;
             border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
+            border-radius: 10px;
+            padding: 08px 20px;
             cursor: pointer;
-            margin: 5px;
+            transition: background-color 0.3s, transform 0.3s;
         }
+
         .button-blue {
             background-color: palevioletred;
         }
+
         .button:hover {
-            background-color: darkpurple;
+            background-color: darkmagenta;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .R1-container {
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .back-link {
+            margin-top: 0px;
+            display: inline-block;
+        }
+
+        .back-link .button {
+            background-color: gray;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1 align="center">CONTROL DE VARIABLES DEL INVERNADERO</h1>
-    <div>
-        <h3>Temperatura:</h3>
-        <input type="text" id="temp">
-        <h3>Humedad:</h3>
-        <input type="text" id="hume">
-        <h3>PH</h3>
-        <input type="text" id="ph">
-        <h3>Reporte escrito:</h3>
-        <input type="text" id="texto">
+    <div class="container">
+        <h1>CONTROL DE VARIABLES DEL INVERNADERO</h1>
+        <div class="form-group">
+            <h3>Temperatura:</h3>
+            <input type="text" id="temp" required>
+        </div>
+        <div class="form-group">
+            <h3>Humedad:</h3>
+            <input type="text" id="hume" required>
+        </div>
+        <div class="form-group">
+            <h3>PH</h3>
+            <input type="text" id="ph" required>
+        </div>
+        <div class="form-group">
+            <h3>Reporte escrito:</h3>
+            <input type="text" id="texto" required>
+        </div>
         <div class="buttons">
             <input type="button" id="datos" value="Leer datos" class="button">
             <input type="button" id="hablar" value="Reporte" class="button">
-            <a href="respaldoi.html" class="button button-blue">Texto Azul</a>
+            <a href="respaldoi.html" class="button button-blue">Graficas</a>
         </div>
         <a href="index.html" class="button">Volver al inicio</a>
-        <div class="R1-container">
-            <img src="img/R1.JPG" alt="R1" class="R1" style="max-width: 100%; height: auto;">
-        </div>
     </div>
     <script src="script.js"></script>
 </body>

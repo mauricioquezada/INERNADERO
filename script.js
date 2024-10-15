@@ -71,3 +71,16 @@ function leer_datos(temperatura, humedad){
     document.getElementById('ph').value= ph;
     document.getElementById('texto').value="El invernadero tiene"+" "+t+" "+"y"+" "+h+ " y " + phs;
 }
+document.getElementById('datos').addEventListener('click', function() {
+    // Recoge los datos del formulario
+    var temp = document.getElementById('temp').value;
+    var hume = document.getElementById('hume').value;
+    var ph = document.getElementById('ph').value;
+
+    // Guarda los datos en LocalStorage
+    localStorage.setItem('temp', temp);
+    localStorage.setItem('hume', hume);
+    localStorage.setItem('ph', ph);
+
+    alert('Datos guardados correctamente');
+});
